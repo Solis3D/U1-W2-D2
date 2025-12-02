@@ -97,9 +97,9 @@ console.log("Dovrai pagare €", totalShoppingCart);
   Alla fine mostra il risultato in console.
 */
 
-let n1 = 4;
-let n2 = 1;
-let n3 = 2;
+let n1 = 1;
+let n2 = 20;
+let n3 = 5;
 
 let first = null;
 let second = null;
@@ -111,8 +111,8 @@ if (n1 > n2 && n1 > n3 && n2 > n3) {
   third = n3;
 } else if (n1 > n2 && n1 > n3 && n3 > n2) {
   first = n1;
-  second = n2;
-  third = n3;
+  second = n3;
+  third = n2;
 } else if (n2 > n1 && n2 > n3 && n1 > n3) {
   first = n2;
   second = n1;
