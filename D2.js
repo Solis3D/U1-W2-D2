@@ -96,6 +96,7 @@ console.log("Dovrai pagare €", totalShoppingCart);
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+console.log("ESERCIZIO 7");
 
 let n1 = 1;
 let n2 = 20;
