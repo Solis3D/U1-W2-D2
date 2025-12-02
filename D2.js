@@ -60,12 +60,36 @@ if (e4Number1 === 8 || e4Number2 === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
+let totalShoppingCart = 60;
+console.log("ESERCIZIO 5");
+console.log("Il totale nel carrello è di €", totalShoppingCart);
+
+if (totalShoppingCart > 50) {
+  console.log("Hai diritto alla spedizione gratuita per ordini superiori a € 50.");
+} else {
+  totalShoppingCart += 10;
+  console.log("L'ordine minimo per la spedizione gratuita è di € 50. Dovrai pagare € 10 euro aggiuntivi per la spedizione");
+}
+
+console.log("Dovrai pagare €", totalShoppingCart);
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+console.log("ESERCIZIO 6");
+totalShoppingCart = 60;
+let coupon = (totalShoppingCart * 20) / 100;
+totalShoppingCart -= coupon;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (totalShoppingCart > 50) {
+  console.log("Hai diritto alla spedizione gratuita per ordini superiori a € 50.");
+} else {
+  totalShoppingCart += 10;
+  console.log("L'ordine minimo per la spedizione gratuita è di € 50. Dovrai pagare € 10 euro aggiuntivi per la spedizione");
+}
+
+console.log("Dovrai pagare €", totalShoppingCart);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -73,7 +97,41 @@ if (e4Number1 === 8 || e4Number2 === 8) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let n1 = 4;
+let n2 = 1;
+let n3 = 2;
+
+let first = null;
+let second = null;
+let third = null;
+
+if (n1 > n2 && n1 > n3 && n2 > n3) {
+  first = n1;
+  second = n2;
+  third = n3;
+} else if (n1 > n2 && n1 > n3 && n3 > n2) {
+  first = n1;
+  second = n2;
+  third = n3;
+} else if (n2 > n1 && n2 > n3 && n1 > n3) {
+  first = n2;
+  second = n1;
+  third = n3;
+} else if (n2 > n1 && n2 > n3 && n3 > n1) {
+  first = n2;
+  second = n3;
+  third = n1;
+} else if (n3 > n1 && n3 > n2 && n1 > n2) {
+  first = n3;
+  second = n1;
+  third = n2;
+} else {
+  first = n3;
+  second = n2;
+  third = n1;
+}
+
+console.log("L'ordine dei numeri in ordine decrescente è:", first, second, third);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
